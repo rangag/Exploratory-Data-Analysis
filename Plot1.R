@@ -1,5 +1,5 @@
 ##Load complete Dataset in to Memory
-hpc_full <- read.csv("E:/softwares/R-Learning/Coursera-Training/Quizes/exploratory data analysis/household_power_consumption.txt", sep=";", na.strings="?", stringsAsFactors=FALSE)
+hpc_full <- read.csv("./household_power_consumption.txt", sep=";", na.strings="?", stringsAsFactors=FALSE)
 ##Convert the Date Column data into R Date  (as by default it will be String)
 hpc_full$Date <- as.Date(hpc_full$Date, format="%d/%m/%Y")
 
